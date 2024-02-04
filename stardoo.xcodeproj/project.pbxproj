@@ -7,20 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48136CEA2B6EF14600DEED86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48136CE92B6EF14600DEED86 /* AppDelegate.m */; };
 		48136CEC2B6EF14700DEED86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48136CEB2B6EF14700DEED86 /* Assets.xcassets */; };
-		48136CEF2B6EF14700DEED86 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48136CED2B6EF14700DEED86 /* MainMenu.xib */; };
-		48136CF12B6EF14700DEED86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48136CF02B6EF14700DEED86 /* main.m */; };
+		48136CFD2B6EF22000DEED86 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48136CF82B6EF19500DEED86 /* SDL2.framework */; };
+		48136CFE2B6EF22000DEED86 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48136CF82B6EF19500DEED86 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48136D0B2B6F1B6200DEED86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D0A2B6F1B6200DEED86 /* main.c */; };
+		48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D0C2B6F440800DEED86 /* stick_figure.bmp */; };
+		48136D112B6FE31800DEED86 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D102B6FE31800DEED86 /* app.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48136CFF2B6EF22000DEED86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48136CFE2B6EF22000DEED86 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48136CE52B6EF14600DEED86 /* stardoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stardoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		48136CE82B6EF14600DEED86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		48136CE92B6EF14600DEED86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		48136CEB2B6EF14700DEED86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		48136CEE2B6EF14700DEED86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		48136CF02B6EF14700DEED86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48136CF22B6EF14700DEED86 /* stardoo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stardoo.entitlements; sourceTree = "<group>"; };
+		48136CF82B6EF19500DEED86 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = SOURCE_ROOT; };
+		48136D0A2B6F1B6200DEED86 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		48136D0C2B6F440800DEED86 /* stick_figure.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = stick_figure.bmp; sourceTree = "<group>"; };
+		48136D0F2B6FE31800DEED86 /* app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
+		48136D102B6FE31800DEED86 /* app.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = app.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48136CFD2B6EF22000DEED86 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,14 +71,23 @@
 		48136CE72B6EF14600DEED86 /* stardoo */ = {
 			isa = PBXGroup;
 			children = (
-				48136CE82B6EF14600DEED86 /* AppDelegate.h */,
-				48136CE92B6EF14600DEED86 /* AppDelegate.m */,
+				48136D0E2B6FE30000DEED86 /* app */,
 				48136CEB2B6EF14700DEED86 /* Assets.xcassets */,
-				48136CED2B6EF14700DEED86 /* MainMenu.xib */,
-				48136CF02B6EF14700DEED86 /* main.m */,
 				48136CF22B6EF14700DEED86 /* stardoo.entitlements */,
+				48136CF82B6EF19500DEED86 /* SDL2.framework */,
+				48136D0A2B6F1B6200DEED86 /* main.c */,
+				48136D0C2B6F440800DEED86 /* stick_figure.bmp */,
 			);
 			path = stardoo;
+			sourceTree = "<group>";
+		};
+		48136D0E2B6FE30000DEED86 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				48136D0F2B6FE31800DEED86 /* app.h */,
+				48136D102B6FE31800DEED86 /* app.c */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +100,7 @@
 				48136CE12B6EF14600DEED86 /* Sources */,
 				48136CE22B6EF14600DEED86 /* Frameworks */,
 				48136CE32B6EF14600DEED86 /* Resources */,
+				48136CFF2B6EF22000DEED86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48136CEC2B6EF14700DEED86 /* Assets.xcassets in Resources */,
-				48136CEF2B6EF14700DEED86 /* MainMenu.xib in Resources */,
+				48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,23 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48136CF12B6EF14700DEED86 /* main.m in Sources */,
-				48136CEA2B6EF14600DEED86 /* AppDelegate.m in Sources */,
+				48136D0B2B6F1B6200DEED86 /* main.c in Sources */,
+				48136D112B6FE31800DEED86 /* app.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		48136CED2B6EF14700DEED86 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48136CEE2B6EF14700DEED86 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		48136CF32B6EF14700DEED86 /* Debug */ = {
@@ -277,6 +294,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SN2649LZ84;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -303,6 +324,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SN2649LZ84;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
