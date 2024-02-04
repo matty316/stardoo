@@ -13,6 +13,7 @@
 		48136D0B2B6F1B6200DEED86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D0A2B6F1B6200DEED86 /* main.c */; };
 		48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D0C2B6F440800DEED86 /* stick_figure.bmp */; };
 		48136D112B6FE31800DEED86 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D102B6FE31800DEED86 /* app.c */; };
+		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		48136D0C2B6F440800DEED86 /* stick_figure.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = stick_figure.bmp; sourceTree = "<group>"; };
 		48136D0F2B6FE31800DEED86 /* app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
 		48136D102B6FE31800DEED86 /* app.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = app.c; sourceTree = "<group>"; };
+		48136D132B6FF5A300DEED86 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		48136D142B6FF5A300DEED86 /* player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = player.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		48136CE72B6EF14600DEED86 /* stardoo */ = {
 			isa = PBXGroup;
 			children = (
+				48136D122B6FF59200DEED86 /* player */,
 				48136D0E2B6FE30000DEED86 /* app */,
 				48136CEB2B6EF14700DEED86 /* Assets.xcassets */,
 				48136CF22B6EF14700DEED86 /* stardoo.entitlements */,
@@ -88,6 +92,15 @@
 				48136D102B6FE31800DEED86 /* app.c */,
 			);
 			path = app;
+			sourceTree = "<group>";
+		};
+		48136D122B6FF59200DEED86 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				48136D132B6FF5A300DEED86 /* player.h */,
+				48136D142B6FF5A300DEED86 /* player.c */,
+			);
+			path = player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48136D0B2B6F1B6200DEED86 /* main.c in Sources */,
+				48136D152B6FF5A300DEED86 /* player.c in Sources */,
 				48136D112B6FE31800DEED86 /* app.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
