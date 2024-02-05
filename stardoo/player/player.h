@@ -19,7 +19,7 @@ struct player {
 
 void renderPlayer(struct app *app);
 void setupPlayer(struct player *player);
-void updatePlayerSprite(Uint8* keystate);
+void updatePlayerSprite(const Uint8* keystate);
 void updatePlayer(struct player *player);
 
 #endif /* player_h */

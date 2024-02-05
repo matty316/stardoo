@@ -26,7 +26,7 @@ void setupPlayer(struct player *player) {
     image_pos.h = HEIGHT;
 }
 
-void updatePlayerSprite(Uint8* keystate) {
+void updatePlayerSprite(const Uint8* keystate) {
     if (keystate[SDL_SCANCODE_UP] || keystate[SDL_SCANCODE_W]) {
         if (sprite == 0) {
             sprite = 1;
