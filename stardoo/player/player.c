@@ -6,20 +6,9 @@
 //
 
 #include "player.h"
+#include <stdio.h>
+#include <stdbool.h>
 
-void move(struct player* player, enum direction direction) {
-    switch (direction) {
-        case UP:
-            player->y += 1;
-            break;
-        case DOWN:
-            player->y -= 1;
-            break;
-        case LEFT:
-            player->x -= 1;
-            break;
-        case RIGHT:
-            player->x += 1;
-            break;
-    }
-}
+#define HEIGHT 44
+#define WIDTH 22
+#define SPEED 5

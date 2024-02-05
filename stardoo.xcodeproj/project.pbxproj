@@ -14,6 +14,7 @@
 		48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D0C2B6F440800DEED86 /* stick_figure.bmp */; };
 		48136D112B6FE31800DEED86 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D102B6FE31800DEED86 /* app.c */; };
 		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
+		48136D192B707E4B00DEED86 /* sprite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D182B707E4A00DEED86 /* sprite.bmp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		48136D102B6FE31800DEED86 /* app.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = app.c; sourceTree = "<group>"; };
 		48136D132B6FF5A300DEED86 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		48136D142B6FF5A300DEED86 /* player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = player.c; sourceTree = "<group>"; };
+		48136D182B707E4A00DEED86 /* sprite.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sprite.bmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		48136CDC2B6EF14600DEED86 = {
 			isa = PBXGroup;
 			children = (
+				48136D182B707E4A00DEED86 /* sprite.bmp */,
 				48136CE72B6EF14600DEED86 /* stardoo */,
 				48136CE62B6EF14600DEED86 /* Products */,
 			);
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48136D192B707E4B00DEED86 /* sprite.bmp in Resources */,
 				48136CEC2B6EF14700DEED86 /* Assets.xcassets in Resources */,
 				48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */,
 			);

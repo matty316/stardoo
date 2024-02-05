@@ -7,22 +7,14 @@
 
 #ifndef player_h
 #define player_h
-
-enum direction {
-    UP,
-    DOWN,
-    RIGHT,
-    LEFT,
-};
+#include <SDL2/SDL.h>
 
 struct player {
-    int x;
-    int y;
+    double x;
+    double y;
     const char *name;
     int health;
     int energy;
 };
-
-void move(struct player* player, enum direction direction);
 
 #endif /* player_h */
