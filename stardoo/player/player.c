@@ -22,8 +22,8 @@ void setupPlayer(struct player *player) {
     image = load_surface("sprite.bmp");
     image_pos.x = player->x;
     image_pos.y = player->y;
-    image_pos.w = 32 * 8;
-    image_pos.h = 32;
+    image_pos.w = WIDTH * 8;
+    image_pos.h = HEIGHT;
 }
 
 void updatePlayerSprite(Uint8* keystate) {
