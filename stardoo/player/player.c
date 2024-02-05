@@ -34,6 +34,7 @@ void updatePlayerSprite(const Uint8* keystate) {
             sprite = 0;
         }
     }
+    
     if (keystate[SDL_SCANCODE_DOWN] || keystate[SDL_SCANCODE_S]) {
         if (sprite == 4) {
             sprite = 5;
@@ -49,6 +50,7 @@ void updatePlayerSprite(const Uint8* keystate) {
             sprite = 2;
         }
     }
+    
     if (keystate[SDL_SCANCODE_LEFT] || keystate[SDL_SCANCODE_A]) {
         if (sprite == 6) {
             sprite = 7;
@@ -65,9 +67,7 @@ void updatePlayer(struct player *player) {
 
 void renderPlayer(struct app *app) {
     SDL_Rect clip = {WIDTH * sprite, 0, WIDTH, HEIGHT};
-    SDL_FillRect(app->screenSurface, NULL, SDL_MapRGB(app->screenSurface->format, 0, 0, 0));
     SDL_BlitSurface(image, &clip, app->screenSurface, &image_pos);
-    SDL_UpdateWindowSurface(app->window);
 }
 
 SDL_Surface *load_surface(const char *path) {

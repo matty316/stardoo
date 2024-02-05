@@ -99,6 +99,7 @@ void keydownEvent(void) {
     if (keystate[SDL_SCANCODE_UP] || keystate[SDL_SCANCODE_W]) {
         y -= speed;
     }
+    
     if (keystate[SDL_SCANCODE_DOWN] || keystate[SDL_SCANCODE_S]) {
         y += speed;
     }
@@ -106,6 +107,7 @@ void keydownEvent(void) {
     if (keystate[SDL_SCANCODE_RIGHT] || keystate[SDL_SCANCODE_D]) {
         x += speed;
     }
+    
     if (keystate[SDL_SCANCODE_LEFT] || keystate[SDL_SCANCODE_A]) {
         x -= speed;
     }
@@ -121,7 +123,9 @@ void update(struct app *app) {
 }
 
 void render(struct app *app) {
+    SDL_FillRect(app->screenSurface, NULL, SDL_MapRGB(app->screenSurface->format, 0, 0, 0));
     renderPlayer(app);
+    SDL_UpdateWindowSurface(app->window);
 }
 
 void setup(struct app *app) {
