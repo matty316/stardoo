@@ -18,7 +18,6 @@ void processInput(struct app* app);
 void update(struct app* app);
 void render(struct app* app);
 void keydownEvent(void);
-void keyupEvent(SDL_Event *e);
 long getCurrentTime(void);
 
 struct player player;
@@ -83,11 +82,7 @@ void processInput(struct app *app) {
             app->quit = true;
             break;
         case SDL_KEYDOWN:
-            printf("keydown\n");
             keydownEvent();
-            break;
-        case SDL_KEYUP:
-            printf("keyup\n");
             break;
         default:
             break;
@@ -119,10 +114,6 @@ void keydownEvent(void) {
     
     player.x += x;
     player.y += y;
-}
-
-void keyupEvent(SDL_Event *e) { 
-    
 }
 
 void update(struct app *app) {
