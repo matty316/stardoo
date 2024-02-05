@@ -7,7 +7,7 @@
 
 #ifndef player_h
 #define player_h
-#include <SDL2/SDL.h>
+#include "../app/app.h"
 
 struct player {
     double x;
@@ -16,5 +16,10 @@ struct player {
     int health;
     int energy;
 };
+
+void renderPlayer(struct app *app);
+void setupPlayer(struct player *player);
+void updatePlayerSprite(Uint8* keystate);
+void updatePlayer(struct player *player);
 
 #endif /* player_h */
