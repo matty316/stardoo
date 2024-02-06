@@ -59,9 +59,9 @@ void updatePlayerSprite(const Uint8* keystate) {
     }
 }
 
-void updatePlayer(struct player *player, double x, double y, Uint32 deltaTime) {
-    player->x += x * deltaTime;
-    player->y += y * deltaTime;
+void updatePlayer(struct player *player, double x, double y) {
+    player->x += x;
+    player->y += y;
     image_pos.x = player->x;
     image_pos.y = player->y;
 }

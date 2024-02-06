@@ -12,12 +12,11 @@
 
 #define WIDTH 1280
 #define HEIGHT 720
-#define SPEED 0.005
-#define HIGH_DELTA 1000.0 / 120.0
-#define LOW_DELTA 1000.0 / 30.0
+#define SPEED 1
+#define MS_PER_UPDATE 1000.0/120.0
 
 void processInput(struct app* app);
-void update(struct app* app, Uint32 deltaTime);
+void update(struct app* app);
 void render(struct app* app);
 void keydownEvent(void);
 long getCurrentTime(void);
@@ -62,18 +61,18 @@ bool init(struct app* app) {
 
 void loop(struct app* app) {
     Uint32 last = SDL_GetTicks();
+    double lag = 0.0;
     while (!app->quit) {
         Uint32 current = SDL_GetTicks();
-        double deltaTime = current - last;
-        processInput(app);
-        if (deltaTime > HIGH_DELTA) {
-            deltaTime = HIGH_DELTA;
-        } else if (deltaTime < LOW_DELTA) {
-            deltaTime = LOW_DELTA;
-        }
-        update(app, deltaTime);
-        render(app);
+        Uint32 deltaTime = current - last;
         last = current;
+        lag += deltaTime;
+        processInput(app);
+        while (lag >= MS_PER_UPDATE) {
+            update(app);
+            lag -= MS_PER_UPDATE;
+        }
+        render(app);
     }
 }
 
@@ -125,9 +124,9 @@ void keydownEvent(void) {
     player_y = y;
 }
 
-void update(struct app *app, Uint32 deltaTime) {
+void update(struct app *app) {
     if (keydown)
-        updatePlayer(&player, player_x, player_y, deltaTime);
+        updatePlayer(&player, player_x, player_y);
 }
 
 void render(struct app *app) {
