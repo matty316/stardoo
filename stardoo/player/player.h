@@ -20,6 +20,6 @@ struct player {
 void renderPlayer(struct app *app);
 void setupPlayer(struct player *player);
 void updatePlayerSprite(const Uint8* keystate);
-void updatePlayer(struct player *player);
+void updatePlayer(struct player *player, double x, double y, Uint32 deltaTime);
 
 #endif /* player_h */

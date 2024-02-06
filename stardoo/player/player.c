@@ -10,7 +10,6 @@
 
 #define HEIGHT 32
 #define WIDTH 32
-#define SPEED 5
 
 SDL_Rect image_pos;
 SDL_Surface *image = NULL;
@@ -60,7 +59,9 @@ void updatePlayerSprite(const Uint8* keystate) {
     }
 }
 
-void updatePlayer(struct player *player) {
+void updatePlayer(struct player *player, double x, double y, Uint32 deltaTime) {
+    player->x += x * deltaTime;
+    player->y += y * deltaTime;
     image_pos.x = player->x;
     image_pos.y = player->y;
 }

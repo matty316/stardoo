@@ -11,7 +11,6 @@
 		48136CFD2B6EF22000DEED86 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48136CF82B6EF19500DEED86 /* SDL2.framework */; };
 		48136CFE2B6EF22000DEED86 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48136CF82B6EF19500DEED86 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48136D0B2B6F1B6200DEED86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D0A2B6F1B6200DEED86 /* main.c */; };
-		48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D0C2B6F440800DEED86 /* stick_figure.bmp */; };
 		48136D112B6FE31800DEED86 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D102B6FE31800DEED86 /* app.c */; };
 		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
 		48136D192B707E4B00DEED86 /* sprite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D182B707E4A00DEED86 /* sprite.bmp */; };
@@ -38,7 +37,6 @@
 		48136CF22B6EF14700DEED86 /* stardoo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stardoo.entitlements; sourceTree = "<group>"; };
 		48136CF82B6EF19500DEED86 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = SOURCE_ROOT; };
 		48136D0A2B6F1B6200DEED86 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		48136D0C2B6F440800DEED86 /* stick_figure.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = stick_figure.bmp; sourceTree = "<group>"; };
 		48136D0F2B6FE31800DEED86 /* app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
 		48136D102B6FE31800DEED86 /* app.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = app.c; sourceTree = "<group>"; };
 		48136D132B6FF5A300DEED86 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 		48136CDC2B6EF14600DEED86 = {
 			isa = PBXGroup;
 			children = (
-				48136D182B707E4A00DEED86 /* sprite.bmp */,
 				48136CE72B6EF14600DEED86 /* stardoo */,
 				48136CE62B6EF14600DEED86 /* Products */,
 			);
@@ -86,7 +83,7 @@
 				48136CF22B6EF14700DEED86 /* stardoo.entitlements */,
 				48136CF82B6EF19500DEED86 /* SDL2.framework */,
 				48136D0A2B6F1B6200DEED86 /* main.c */,
-				48136D0C2B6F440800DEED86 /* stick_figure.bmp */,
+				48136D182B707E4A00DEED86 /* sprite.bmp */,
 			);
 			path = stardoo;
 			sourceTree = "<group>";
@@ -171,7 +168,6 @@
 			files = (
 				48136D192B707E4B00DEED86 /* sprite.bmp in Resources */,
 				48136CEC2B6EF14700DEED86 /* Assets.xcassets in Resources */,
-				48136D0D2B6F440800DEED86 /* stick_figure.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
