@@ -29,7 +29,7 @@ void updatePlayerSprite(const Uint8* keystate) {
     if (keystate[SDL_SCANCODE_RIGHT] || keystate[SDL_SCANCODE_D]) {
         if (sprite == 2) {
             sprite = 3;
-        } else n  {
+        } else {
             sprite = 2;
         }
     } else if (keystate[SDL_SCANCODE_LEFT] || keystate[SDL_SCANCODE_A]) {

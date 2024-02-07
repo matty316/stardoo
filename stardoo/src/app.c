@@ -13,7 +13,7 @@
 #define WIDTH 1280
 #define HEIGHT 720
 #define SPEED 1
-#define MS_PER_UPDATE 1000.0/120.0
+#define MS_PER_UPDATE 8
 
 void processInput(struct app* app);
 void update(struct app* app);

@@ -14,7 +14,6 @@
 		48136D112B6FE31800DEED86 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D102B6FE31800DEED86 /* app.c */; };
 		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
 		48136D192B707E4B00DEED86 /* sprite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D182B707E4A00DEED86 /* sprite.bmp */; };
-		48136D392B733B4900DEED86 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 48136D382B733B4900DEED86 /* Makefile */; };
 		48136D3C2B73C80600DEED86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48136D3B2B73C80600DEED86 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		48136D132B6FF5A300DEED86 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		48136D142B6FF5A300DEED86 /* player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = player.c; sourceTree = "<group>"; };
 		48136D182B707E4A00DEED86 /* sprite.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sprite.bmp; sourceTree = "<group>"; };
-		48136D382B733B4900DEED86 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		48136D3A2B73412100DEED86 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		48136D3B2B73C80600DEED86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,9 +78,6 @@
 		48136CE72B6EF14600DEED86 /* stardoo */ = {
 			isa = PBXGroup;
 			children = (
-				48136D382B733B4900DEED86 /* Makefile */,
-				48136D372B733AD500DEED86 /* obj */,
-				48136D362B733AD000DEED86 /* bin */,
 				48136D352B733AC400DEED86 /* src */,
 				48136CEB2B6EF14700DEED86 /* Assets.xcassets */,
 				48136CF22B6EF14700DEED86 /* stardoo.entitlements */,
@@ -103,20 +98,6 @@
 				48136D3A2B73412100DEED86 /* common.h */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		48136D362B733AD000DEED86 /* bin */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = bin;
-			sourceTree = "<group>";
-		};
-		48136D372B733AD500DEED86 /* obj */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = obj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +171,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48136D392B733B4900DEED86 /* Makefile in Sources */,
 				48136D0B2B6F1B6200DEED86 /* main.c in Sources */,
 				48136D152B6FF5A300DEED86 /* player.c in Sources */,
 				48136D112B6FE31800DEED86 /* app.c in Sources */,
