@@ -5,8 +5,6 @@
 //  Created by matty on 2/3/24.
 //
 
-#include <stdio.h>
-#include <stdbool.h>
 #include <SDL2/SDL.h>
 #include "app.h"
 

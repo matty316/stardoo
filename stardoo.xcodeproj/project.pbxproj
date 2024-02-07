@@ -14,7 +14,6 @@
 		48136D112B6FE31800DEED86 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D102B6FE31800DEED86 /* app.c */; };
 		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
 		48136D192B707E4B00DEED86 /* sprite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D182B707E4A00DEED86 /* sprite.bmp */; };
-		48136D1C2B713C0D00DEED86 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D1B2B713C0D00DEED86 /* state.c */; };
 		48136D392B733B4900DEED86 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 48136D382B733B4900DEED86 /* Makefile */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +42,8 @@
 		48136D132B6FF5A300DEED86 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		48136D142B6FF5A300DEED86 /* player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = player.c; sourceTree = "<group>"; };
 		48136D182B707E4A00DEED86 /* sprite.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sprite.bmp; sourceTree = "<group>"; };
-		48136D1A2B713C0D00DEED86 /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
-		48136D1B2B713C0D00DEED86 /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
 		48136D382B733B4900DEED86 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		48136D3A2B73412100DEED86 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +96,8 @@
 				48136D142B6FF5A300DEED86 /* player.c */,
 				48136D0F2B6FE31800DEED86 /* app.h */,
 				48136D102B6FE31800DEED86 /* app.c */,
-				48136D1A2B713C0D00DEED86 /* state.h */,
-				48136D1B2B713C0D00DEED86 /* state.c */,
 				48136D0A2B6F1B6200DEED86 /* main.c */,
+				48136D3A2B73412100DEED86 /* common.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -191,7 +188,6 @@
 			files = (
 				48136D392B733B4900DEED86 /* Makefile in Sources */,
 				48136D0B2B6F1B6200DEED86 /* main.c in Sources */,
-				48136D1C2B713C0D00DEED86 /* state.c in Sources */,
 				48136D152B6FF5A300DEED86 /* player.c in Sources */,
 				48136D112B6FE31800DEED86 /* app.c in Sources */,
 			);
