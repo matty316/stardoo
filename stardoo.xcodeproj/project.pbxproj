@@ -15,6 +15,7 @@
 		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
 		48136D192B707E4B00DEED86 /* sprite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D182B707E4A00DEED86 /* sprite.bmp */; };
 		48136D1C2B713C0D00DEED86 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D1B2B713C0D00DEED86 /* state.c */; };
+		48136D392B733B4900DEED86 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 48136D382B733B4900DEED86 /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 		48136D182B707E4A00DEED86 /* sprite.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sprite.bmp; sourceTree = "<group>"; };
 		48136D1A2B713C0D00DEED86 /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
 		48136D1B2B713C0D00DEED86 /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		48136D382B733B4900DEED86 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,35 +79,44 @@
 		48136CE72B6EF14600DEED86 /* stardoo */ = {
 			isa = PBXGroup;
 			children = (
-				48136D122B6FF59200DEED86 /* player */,
-				48136D0E2B6FE30000DEED86 /* app */,
+				48136D382B733B4900DEED86 /* Makefile */,
+				48136D372B733AD500DEED86 /* obj */,
+				48136D362B733AD000DEED86 /* bin */,
+				48136D352B733AC400DEED86 /* src */,
 				48136CEB2B6EF14700DEED86 /* Assets.xcassets */,
 				48136CF22B6EF14700DEED86 /* stardoo.entitlements */,
 				48136CF82B6EF19500DEED86 /* SDL2.framework */,
-				48136D0A2B6F1B6200DEED86 /* main.c */,
 				48136D182B707E4A00DEED86 /* sprite.bmp */,
 			);
 			path = stardoo;
 			sourceTree = "<group>";
 		};
-		48136D0E2B6FE30000DEED86 /* app */ = {
-			isa = PBXGroup;
-			children = (
-				48136D0F2B6FE31800DEED86 /* app.h */,
-				48136D102B6FE31800DEED86 /* app.c */,
-				48136D1A2B713C0D00DEED86 /* state.h */,
-				48136D1B2B713C0D00DEED86 /* state.c */,
-			);
-			path = app;
-			sourceTree = "<group>";
-		};
-		48136D122B6FF59200DEED86 /* player */ = {
+		48136D352B733AC400DEED86 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				48136D132B6FF5A300DEED86 /* player.h */,
 				48136D142B6FF5A300DEED86 /* player.c */,
+				48136D0F2B6FE31800DEED86 /* app.h */,
+				48136D102B6FE31800DEED86 /* app.c */,
+				48136D1A2B713C0D00DEED86 /* state.h */,
+				48136D1B2B713C0D00DEED86 /* state.c */,
+				48136D0A2B6F1B6200DEED86 /* main.c */,
 			);
-			path = player;
+			path = src;
+			sourceTree = "<group>";
+		};
+		48136D362B733AD000DEED86 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		48136D372B733AD500DEED86 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = obj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48136D392B733B4900DEED86 /* Makefile in Sources */,
 				48136D0B2B6F1B6200DEED86 /* main.c in Sources */,
 				48136D1C2B713C0D00DEED86 /* state.c in Sources */,
 				48136D152B6FF5A300DEED86 /* player.c in Sources */,

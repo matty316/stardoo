@@ -6,7 +6,7 @@
 //
 
 #include "app.h"
-#include "../player/player.h"
+#include "player.h"
 #include <time.h>
 #include <unistd.h>
 

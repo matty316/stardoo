@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <SDL2/SDL.h>
-#include "app/app.h"
+#include "app.h"
 
 int main(int argc, char* argv[]) {    
     struct app app;

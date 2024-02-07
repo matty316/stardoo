@@ -7,7 +7,7 @@
 
 #ifndef player_h
 #define player_h
-#include "../app/app.h"
+#include "app.h"
 
 struct player {
     double x;
