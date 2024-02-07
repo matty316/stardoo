@@ -17,6 +17,8 @@ struct player {
     int energy;
 };
 
+void initPlayer(struct player *player);
+void freePlayer(struct player *player);
 void renderPlayer(struct app *app);
 void setupPlayer(struct player *player);
 void updatePlayerSprite(const Uint8* keystate);

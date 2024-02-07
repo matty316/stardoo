@@ -9,14 +9,14 @@
 #include "app.h"
 
 int main(int argc, char* argv[]) {    
-    struct app app;
+    struct app *app = malloc(sizeof(struct app));
     
-    if (!init(&app)) {
+    if (!init(app)) {
         return 1;
     }
-    setup(&app);
-    loop(&app);
-    destroy(&app);
+    setup(app);
+    loop(app);
+    destroy(app);
     
     return 0;
 }

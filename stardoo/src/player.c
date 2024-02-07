@@ -17,6 +17,19 @@ int sprite = 5;
 
 SDL_Surface *load_surface(const char *path);
 
+void initPlayer(struct player *player) {
+    player->x = 0;
+    player->y = 0;
+    player->name = "matty";
+    player->health = 100;
+    player->energy = 100;
+}
+
+void freePlayer(struct player *player) {
+    free(player);
+    player = NULL;
+}
+
 void setupPlayer(struct player *player) {
     image = load_surface("sprite.bmp");
     image_pos.x = player->x;

@@ -23,7 +23,7 @@ long getCurrentTime(void);
 
 bool keydown = false;
 
-struct player player;
+struct player *player = NULL;
 double player_x;
 double player_y;
 
@@ -48,14 +48,8 @@ bool init(struct app* app) {
     app->screenSurface = SDL_GetWindowSurface(app->window);
     SDL_UpdateWindowSurface(app->window);
 
-    player = (struct player){
-        .x = 0,
-        .y = 0,
-        .name = "matty",
-        .health = 100,
-        .energy = 100,
-    };
-    
+    player = malloc(sizeof(struct player));
+    initPlayer(player);
     return true;
 }
 
@@ -122,7 +116,7 @@ void keydownEvent(void) {
 
 void update(struct app *app) {
     if (keydown)
-        updatePlayer(&player, player_x, player_y);
+        updatePlayer(player, player_x, player_y);
 }
 
 void render(struct app *app) {
@@ -132,13 +126,16 @@ void render(struct app *app) {
 }
 
 void setup(struct app *app) {
-    setupPlayer(&player);
+    setupPlayer(player);
 }
 
 void destroy(struct app *app) {
+    freePlayer(player);
     SDL_FreeSurface(app->screenSurface);
     SDL_DestroyWindow(app->window);
     SDL_Quit();
+    free(app);
+    app = NULL;
 }
 
 
