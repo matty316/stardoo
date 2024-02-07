@@ -26,35 +26,29 @@ void setupPlayer(struct player *player) {
 }
 
 void updatePlayerSprite(const Uint8* keystate) {
-    if (keystate[SDL_SCANCODE_UP] || keystate[SDL_SCANCODE_W]) {
+    if (keystate[SDL_SCANCODE_RIGHT] || keystate[SDL_SCANCODE_D]) {
+        if (sprite == 2) {
+            sprite = 3;
+        } else n  {
+            sprite = 2;
+        }
+    } else if (keystate[SDL_SCANCODE_LEFT] || keystate[SDL_SCANCODE_A]) {
+        if (sprite == 6) {
+            sprite = 7;
+        } else {
+            sprite = 6;
+        }
+    } else if (keystate[SDL_SCANCODE_UP] || keystate[SDL_SCANCODE_W]) {
         if (sprite == 0) {
             sprite = 1;
         } else {
             sprite = 0;
         }
-    }
-    
-    if (keystate[SDL_SCANCODE_DOWN] || keystate[SDL_SCANCODE_S]) {
+    } else if (keystate[SDL_SCANCODE_DOWN] || keystate[SDL_SCANCODE_S]) {
         if (sprite == 4) {
             sprite = 5;
         } else {
             sprite = 4;
-        }
-    }
-    
-    if (keystate[SDL_SCANCODE_RIGHT] || keystate[SDL_SCANCODE_D]) {
-        if (sprite == 2) {
-            sprite = 3;
-        } else {
-            sprite = 2;
-        }
-    }
-    
-    if (keystate[SDL_SCANCODE_LEFT] || keystate[SDL_SCANCODE_A]) {
-        if (sprite == 6) {
-            sprite = 7;
-        } else {
-            sprite = 6;
         }
     }
 }

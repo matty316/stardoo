@@ -1,1 +1,1 @@
-# stardew clone in C using SDL
+# stardew clone in C using SDL2

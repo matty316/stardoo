@@ -15,6 +15,7 @@
 		48136D152B6FF5A300DEED86 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 48136D142B6FF5A300DEED86 /* player.c */; };
 		48136D192B707E4B00DEED86 /* sprite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 48136D182B707E4A00DEED86 /* sprite.bmp */; };
 		48136D392B733B4900DEED86 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 48136D382B733B4900DEED86 /* Makefile */; };
+		48136D3C2B73C80600DEED86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48136D3B2B73C80600DEED86 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 		48136D182B707E4A00DEED86 /* sprite.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sprite.bmp; sourceTree = "<group>"; };
 		48136D382B733B4900DEED86 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		48136D3A2B73412100DEED86 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		48136D3B2B73C80600DEED86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		48136CDC2B6EF14600DEED86 = {
 			isa = PBXGroup;
 			children = (
+				48136D3B2B73C80600DEED86 /* README.md */,
 				48136CE72B6EF14600DEED86 /* stardoo */,
 				48136CE62B6EF14600DEED86 /* Products */,
 			);
@@ -174,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48136D3C2B73C80600DEED86 /* README.md in Resources */,
 				48136D192B707E4B00DEED86 /* sprite.bmp in Resources */,
 				48136CEC2B6EF14700DEED86 /* Assets.xcassets in Resources */,
 			);
